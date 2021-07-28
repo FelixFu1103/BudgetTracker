@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{5DF438AB-F72D-4D94-9F6D-D5CD600E4FD9}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Infrastructure/Services/UserService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HaoFu.BudgetTrackerMVC/Views/Expenditure/EditExpenditure.cshtml">
     <Files>
       <File FileName="ApplicationCore/Models/Request/UserLoginRequestModel.cs" Line="5" Column="2" />
       <File FileName="ApplicationCore/Models/Request/UserRegisterRequestModel.cs" />
@@ -17,11 +17,11 @@
       <File FileName="ApplicationCore/ServiceInterfaces/IExpenditureService.cs" />
       <File FileName="ApplicationCore/ServiceInterfaces/IIncomeService.cs" />
       <File FileName="ApplicationCore/ServiceInterfaces/IUserService.cs" />
-      <File FileName="Infrastructure/Data/BudgetTrackerDbContext.cs" />
+      <File FileName="Infrastructure/Data/BudgetTrackerDbContext.cs" Line="28" Column="39" />
       <File FileName="Infrastructure/Repositories/EfRepository.cs" />
       <File FileName="Infrastructure/Repositories/ExpenditureRepository.cs" />
       <File FileName="Infrastructure/Repositories/IncomeRepository.cs" />
-      <File FileName="Infrastructure/Repositories/UserRepository.cs" />
+      <File FileName="Infrastructure/Repositories/UserRepository.cs" Line="1" Column="1" />
       <File FileName="Infrastructure/Services/CurrentUser.cs" Line="5" Column="7" />
       <File FileName="Infrastructure/Services/ExpenditureService.cs" Line="40" Column="15" />
       <File FileName="Infrastructure/Services/IncomeService.cs" Line="79" Column="23" />
@@ -37,8 +37,8 @@
       <File FileName="HaoFu.BudgetTrackerMVC/Views/Expenditure/Update.cshtml" />
       <File FileName="HaoFu.BudgetTrackerMVC/Views/Home/Index.cshtml" />
       <File FileName="HaoFu.BudgetTrackerMVC/Views/Income/Delete.cshtml" />
-      <File FileName="HaoFu.BudgetTrackerMVC/Views/Income/EditIncome.cshtml" />
-      <File FileName="HaoFu.BudgetTrackerMVC/Views/Income/Update.cshtml" />
+      <File FileName="HaoFu.BudgetTrackerMVC/Views/Income/EditIncome.cshtml" Line="30" Column="7" />
+      <File FileName="HaoFu.BudgetTrackerMVC/Views/Income/Update.cshtml" Line="33" Column="12" />
       <File FileName="HaoFu.BudgetTrackerMVC/Views/Shared/_BudgetCard.cshtml" />
       <File FileName="HaoFu.BudgetTrackerMVC/Views/Shared/_Layout.cshtml" />
       <File FileName="HaoFu.BudgetTrackerMVC/Views/Shared/_LoginPartial.cshtml" />
@@ -50,15 +50,19 @@
       <File FileName="HaoFu.BudgetTrackerMVC/Views/User/UserProfile.cshtml" />
       <File FileName="HaoFu.BudgetTrackerMVC/Controllers/ExpenditureController.cs" />
       <File FileName="ApplicationCore/Entities/User.cs" />
-      <File FileName="Infrastructure/Services/UserService.cs" Line="178" Column="62" />
+      <File FileName="Infrastructure/Services/UserService.cs" Line="95" Column="36" />
+      <File FileName="HaoFu.BudgetTrackerMVC/Views/Expenditure/EditExpenditure.cshtml" Line="29" Column="129" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="HaoFu.BudgetTracker" expanded="True">
-            <Node name="Infrastructure" expanded="True">
-              <Node name="Services" expanded="True">
-                <Node name="UserService.cs" selected="True" />
+            <Node name="HaoFu.BudgetTrackerMVC" expanded="True">
+              <Node name="Views" expanded="True">
+                <Node name="Expenditure" expanded="True">
+                  <Node name="EditExpenditure.cshtml" selected="True" />
+                </Node>
+                <Node name="Income" expanded="True" />
               </Node>
             </Node>
           </Node>
