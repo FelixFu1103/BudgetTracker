@@ -1,0 +1,21 @@
+﻿@model ApplicationCore.Models.Response.UserDetailResponseModel
+
+
+<div>
+    <h2 class="align-content-center">Delete User</h2>
+    <form asp-action="Delete">
+        <div asp-validation-summary="ModelOnly"></div>
+        <div class="form-group">
+            <label asp-for="Email">Email</label>
+            <input asp-for="Email" class="form-control" name="Email" value="@Model.Email" readonly>
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="FullName">Fullname</label>
+            <input asp-for="FullName" class="form-control" name="FullName" value="@Model.FullName" readonly>
+            <span asp-validation-for="FullName" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Delete</button>
+        <a href="##" onClick="history.go(-1); return false;"><button type="button" class="btn btn-secondary">Cancel</button></a>
+    </form>
+</div>

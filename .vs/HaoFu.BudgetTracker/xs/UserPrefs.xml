@@ -1,0 +1,77 @@
+﻿<Properties StartupConfiguration="{5DF438AB-F72D-4D94-9F6D-D5CD600E4FD9}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Infrastructure/Services/UserService.cs">
+    <Files>
+      <File FileName="ApplicationCore/Models/Request/UserLoginRequestModel.cs" Line="5" Column="2" />
+      <File FileName="ApplicationCore/Models/Request/UserRegisterRequestModel.cs" />
+      <File FileName="ApplicationCore/Models/Request/UserUpdateRequestModel.cs" />
+      <File FileName="ApplicationCore/Models/Response/UserBudgetResponseModel.cs" />
+      <File FileName="ApplicationCore/Models/Response/UserCardResponseModel.cs" />
+      <File FileName="ApplicationCore/Models/Response/UserDetailResponseModel.cs" />
+      <File FileName="ApplicationCore/Models/Response/UserLoginResponseModel.cs" />
+      <File FileName="ApplicationCore/Models/Response/UserRegisterResponseModel.cs" />
+      <File FileName="ApplicationCore/RepositoryInterfaces/IAsyncReppository.cs" />
+      <File FileName="ApplicationCore/RepositoryInterfaces/IExpenditureRepository.cs" />
+      <File FileName="ApplicationCore/RepositoryInterfaces/IncomeRepository.cs" />
+      <File FileName="ApplicationCore/RepositoryInterfaces/IUserRepository.cs" />
+      <File FileName="ApplicationCore/ServiceInterfaces/ICurrentUser.cs" />
+      <File FileName="ApplicationCore/ServiceInterfaces/IExpenditureService.cs" />
+      <File FileName="ApplicationCore/ServiceInterfaces/IIncomeService.cs" />
+      <File FileName="ApplicationCore/ServiceInterfaces/IUserService.cs" />
+      <File FileName="Infrastructure/Data/BudgetTrackerDbContext.cs" />
+      <File FileName="Infrastructure/Repositories/EfRepository.cs" />
+      <File FileName="Infrastructure/Repositories/ExpenditureRepository.cs" />
+      <File FileName="Infrastructure/Repositories/IncomeRepository.cs" />
+      <File FileName="Infrastructure/Repositories/UserRepository.cs" />
+      <File FileName="Infrastructure/Services/CurrentUser.cs" />
+      <File FileName="Infrastructure/Services/ExpenditureService.cs" />
+      <File FileName="Infrastructure/Services/IncomeService.cs" />
+      <File FileName="Infrastructure/Services/UserService.cs" Line="46" Column="23" />
+      <File FileName="HaoFu.BudgetTrackerMVC/appsettings.json" />
+      <File FileName="HaoFu.BudgetTrackerMVC/Startup.cs" />
+      <File FileName="HaoFu.BudgetTrackerMVC/Controllers/AccountController.cs" />
+      <File FileName="HaoFu.BudgetTrackerMVC/Controllers/HomeController.cs" />
+      <File FileName="HaoFu.BudgetTrackerMVC/Controllers/IncomeController.cs" />
+      <File FileName="HaoFu.BudgetTrackerMVC/Controllers/UserController.cs" />
+      <File FileName="HaoFu.BudgetTrackerMVC/Views/Account/Login.cshtml" />
+      <File FileName="HaoFu.BudgetTrackerMVC/Views/Account/Register.cshtml" />
+      <File FileName="HaoFu.BudgetTrackerMVC/Views/Expenditure/Delete.cshtml" />
+      <File FileName="HaoFu.BudgetTrackerMVC/Views/Expenditure/EditExpenditure.cshtml" />
+      <File FileName="HaoFu.BudgetTrackerMVC/Views/Expenditure/Update.cshtml" />
+      <File FileName="HaoFu.BudgetTrackerMVC/Views/Home/Index.cshtml" />
+      <File FileName="HaoFu.BudgetTrackerMVC/Views/Income/Delete.cshtml" />
+      <File FileName="HaoFu.BudgetTrackerMVC/Views/Income/EditIncome.cshtml" />
+      <File FileName="HaoFu.BudgetTrackerMVC/Views/Income/Update.cshtml" />
+      <File FileName="HaoFu.BudgetTrackerMVC/Views/Shared/_BudgetCard.cshtml" />
+      <File FileName="HaoFu.BudgetTrackerMVC/Views/Shared/_Layout.cshtml" />
+      <File FileName="HaoFu.BudgetTrackerMVC/Views/Shared/_LoginPartial.cshtml" />
+      <File FileName="HaoFu.BudgetTrackerMVC/Views/Shared/_UserCard.cshtml" />
+      <File FileName="HaoFu.BudgetTrackerMVC/Views/User/AddExpenditure.cshtml" />
+      <File FileName="HaoFu.BudgetTrackerMVC/Views/User/AddIncome.cshtml" />
+      <File FileName="HaoFu.BudgetTrackerMVC/Views/User/Delete.cshtml" />
+      <File FileName="HaoFu.BudgetTrackerMVC/Views/User/UpdateUser.cshtml" />
+      <File FileName="HaoFu.BudgetTrackerMVC/Views/User/UserProfile.cshtml" />
+      <File FileName="HaoFu.BudgetTrackerMVC/Controllers/ExpenditureController.cs" />
+      <File FileName="ApplicationCore/Entities/User.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HaoFu.BudgetTracker" expanded="True">
+            <Node name="Infrastructure" expanded="True">
+              <Node name="Services" expanded="True">
+                <Node name="UserService.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.HaoFu.BudgetTrackerMVC PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>

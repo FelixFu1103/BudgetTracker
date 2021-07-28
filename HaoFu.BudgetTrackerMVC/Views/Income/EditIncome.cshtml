@@ -1,0 +1,30 @@
+﻿@model List<ApplicationCore.Models.Response.UserBudgetResponseModel>
+
+<h3>Choose Income Record You Want to Edit</h3>
+<div class="row">
+    <table class="table table-striped">
+        <tr>
+            <th>ID</th>
+            <th>AMOUNT</th>
+            <th>DESCRIPTION</th>
+            <th>DATE</th>
+            <th>REMARKS</th>
+            <th>UPDATE</th>
+        </tr>
+        @foreach (var income in @Model)
+        {
+
+            <tr class="clickable-row">
+                <td>@income.Id</td>
+                <td>@income.Amount</td>
+                <td>@income.Description</td>
+                <td>@income.IncomeOrExpDate.Value.ToShortDateString()</td>
+                <td>@income.Remarks</td>
+                <td>
+                    <a asp-controller="Income" asp-action="Update" asp-route-id="@income.Id">edit</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a asp-controller="Income" asp-action="Delete" asp-route-id="@income.Id">delete</a>
+                </td>
+            </tr>
+        }
+    </table>
+    <a class="ml-auto" href="##" onClick="history.go(-1); return false;"><button type="button" class="btn btn-secondary">Back to Profile</button></a>
+</div>

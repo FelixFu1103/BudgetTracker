@@ -1,0 +1,11 @@
+﻿@model ApplicationCore.Models.Response.UserCardResponseModel
+
+<tr>
+    <td>@Model.Id</td>
+    <td><a asp-controller="User" asp-action="UserProfile" asp-route-id="@Model.Id">@Model.FullName</a></td>
+    <td>@Model.Email</td>
+    <td>@Model.JoinedOn</td>
+    <td>
+        <a asp-controller="User" asp-action="Delete" asp-route-id="@Model.Id"><i class="fas fa-trash-alt"></i></a>
+    </td>
+</tr>

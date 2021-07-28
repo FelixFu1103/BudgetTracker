@@ -1,0 +1,91 @@
+﻿@model ApplicationCore.Models.Response.UserDetailResponseModel
+@using ApplicationCore.ServiceInterfaces
+@inject ICurrentUser _currentUser
+@{
+    ViewData["Title"] = "User Profile";
+}
+
+<div class="container">
+    <h3 class="justify-content-center">User Profile</h3>
+
+    <div class="row bg-light">
+        <div class="col-6">
+            <h4 class="text-muted mt-2">Total Balance:</h4>
+
+            <h1 class="mb-10">$@Model.TotalCash</h1>
+        </div>
+
+        <div class="col-6">
+            <div class="card mt-10">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="fas fa-id-card">Name:</i>&nbsp;&nbsp;@Model.FullName</li>
+                    <li class="list-group-item"><i class="fas fa-envelope">Email:</i>&nbsp;&nbsp;@Model.Email</li>
+                    <li class="list-group-item"><i class="fas fa-sign-in-alt">JoinedOn:</i>&nbsp;&nbsp;@Model.JoinedOn</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    
+    <div class="row bg-light">
+
+        <div class="container">
+            <h2>My Income and Expense</h2>
+            <ul class="nav nav-tabs">
+                <li class="active nav-item mr-2"><a data-toggle="tab" href="#home">Income</a></li>
+                <li class="nav-item ml-2"><a data-toggle="tab" href="#menu1">Expenditure</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div id="home" class="tab-pane fade in active">
+                    <h6 class="mt-2 text-muted">INCOME</h6>
+                    @if (_currentUser.UserId == @Model.Id)
+                    {
+                        <div class="btn-group mt-2 mb-2">
+                            <button type="button" class="btn btn-light mr-2">
+                                <a asp-controller="User" asp-action="AddIncome" asp-route-id="@Model.Id">
+                                    <i class="fas fa-plus"></i>&nbsp;&nbsp;Add Income
+                                </a>
+                            </button>
+                            <button type="button" class="btn  btn-light ml-2">
+                                <a asp-controller="income" asp-action="EditIncome" asp-route-id="@Model.Id">
+                                    <i class="far fa-edit"></i>&nbsp;Edit Income
+                                </a>
+                            </button>
+                        </div>
+                    }
+                    else
+                    {
+                        
+                    }
+
+                    <partial name="_BudgetCard" model="@Model.Incomes" />
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                    <h6 class="mt-2 text-muted">EXPENDITURE</h6>
+                    @if (_currentUser.UserId == @Model.Id)
+                    {
+                        <div class="btn-group mt-2 mb-2">
+                            <button type="button" class="btn btn-light mr-2">
+                                <a asp-controller="User" asp-action="AddExpenditure" asp-route-id="@Model.Id">
+                                    <i class="fas fa-plus"></i>&nbsp;&nbsp;Add Expense
+                                </a>
+                            </button>
+                            <button type="button" class="btn btn-light ml-2">
+                                <a asp-controller="Expenditure" asp-action="EditExpenditure" asp-route-id="@Model.Id">
+                                    <i class="far fa-edit"></i>&nbsp;Edit Expense
+                                </a>
+                            </button>
+                        </div>
+                    }
+                    else
+                    {
+                       
+                    }
+
+                    <partial name="_BudgetCard" model="@Model.Expands" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

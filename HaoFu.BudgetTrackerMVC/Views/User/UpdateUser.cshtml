@@ -1,0 +1,31 @@
+﻿@model ApplicationCore.Models.Request.UserUpdateRequestModel
+
+@{
+    ViewData["Ttile"] = "Update Income";
+}
+
+<div>
+    <h2 class="align-content-center">Update User Information</h2>
+    <form asp-action="updateUser">
+        <div asp-validation-summary="ModelOnly"></div>
+        <div class="form-group">
+            <label asp-for="Email">Email</label>
+            <input asp-for="Email" class="form-control" name="Email" value="@Model.Email">
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Password">Password</label>
+            <input asp-for="Password" class="form-control" name="Password">
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="FullName">Fullname</label>
+            <input asp-for="FullName" class="form-control" name="FullName" value="@Model.FullName">
+            <span asp-validation-for="FullName" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+        <a href="##" onClick="history.go(-1); return false;"><button type="button" class="btn btn-secondary">Cancel</button></a>
+        &nbsp;
+        <a asp-controller="User" asp-action="Delete" asp-route-id="@Model.Id"><i class="fas fa-trash-alt"></i>Delete</a>
+    </form>
+</div>

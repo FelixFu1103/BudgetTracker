@@ -1,0 +1,21 @@
+﻿@model List<ApplicationCore.Models.Response.UserBudgetResponseModel>
+
+<div class="row">
+    <table class="table table-hover">
+        <tr>
+            <th>AMOUNT</th>
+            <th>DESCRIPTION</th>
+            <th>DATE</th>
+            <th>REMARKS</th>
+        </tr>
+        @foreach (var budget in @Model)
+        {
+            <tr>
+                <td>@budget.Amount</td>
+                <td>@budget.Description</td>
+                <td>@budget.IncomeOrExpDate.Value.ToShortDateString()</td>
+                <td>@budget.Remarks</td>
+            </tr>
+        }
+    </table>
+</div>

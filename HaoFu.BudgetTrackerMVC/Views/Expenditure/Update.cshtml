@@ -1,0 +1,35 @@
+﻿@model ApplicationCore.Models.Request.ExpendUpdateRequestModel
+
+@{
+    ViewData["Ttile"] = "Update Income";
+}
+
+<div>
+    <h2 class="align-content-center">Update Expenditure Record</h2>
+    <form asp-action="Update">
+        <div asp-validation-summary="ModelOnly"></div>
+        <div class="form-group">
+            <label asp-for="Amount">Amount</label>
+            <input asp-for="Amount" class="form-control" name="amount" value="@Model.Amount">
+            <span asp-validation-for="Amount" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Description">Description</label>
+            <input asp-for="Description" class="form-control" name="description" value="@Model.Description">
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Remarks">Remarks</label>
+            <input asp-for="Remarks" class="form-control" name="remarks" value="@Model.Remarks">
+            <span asp-validation-for="Remarks" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="ExpDate">ExpDate</label>
+            <input type="Date" asp-for="ExpDate" class="form-control" name="ExpDate" value="@Model.ExpDate">
+            <span asp-validation-for="ExpDate" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save</button>
+        <a href="##" onClick="history.go(-1); return false;"><button type="button" class="btn btn-secondary">Cancel</button></a>
+    </form>
+</div>

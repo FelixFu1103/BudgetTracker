@@ -1,0 +1,30 @@
+﻿@model List<ApplicationCore.Models.Response.UserBudgetResponseModel>
+
+<h3>Choose Expenditrue Record You Want to Edit</h3>
+<div class="row">
+    <table class="table table-striped">
+        <tr>
+            <th>ID</th>
+            <th>AMOUNT</th>
+            <th>DESCRIPTION</th>
+            <th>DATE</th>
+            <th>REMARKS</th>
+            <th>UPDATE</th>
+        </tr>
+        @foreach (var expend in @Model)
+        {
+
+            <tr>
+                <td>@expend.Id</td>
+                <td>@expend.Amount</td>
+                <td>@expend.Description</td>
+                <td>@expend.IncomeOrExpDate.Value.ToShortDateString()</td>
+                <td>@expend.Remarks</td>
+                <td>
+                    <a asp-controller="expenditure" asp-action="Update" asp-route-id="@expend.Id">edit</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a asp-controller="expenditure" asp-action="delete" asp-route-id="@expend.Id">delete</a>
+                </td>
+            </tr>
+        }
+    </table>
+    <a class="ml-auto" href="##" onClick="history.go(-1); return false;"><button type="button" class="btn btn-secondary">Back to Profile</button></a>
+</div>

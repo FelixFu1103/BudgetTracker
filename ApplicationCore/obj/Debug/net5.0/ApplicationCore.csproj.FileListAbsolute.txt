@@ -1,0 +1,15 @@
+/Users/feli-v/Documents/HaoFu.BudgetTrackerMVC/ApplicationCore/bin/Debug/net5.0/ApplicationCore.deps.json
+/Users/feli-v/Documents/HaoFu.BudgetTrackerMVC/ApplicationCore/bin/Debug/net5.0/ApplicationCore.runtimeconfig.json
+/Users/feli-v/Documents/HaoFu.BudgetTrackerMVC/ApplicationCore/bin/Debug/net5.0/ApplicationCore.runtimeconfig.dev.json
+/Users/feli-v/Documents/HaoFu.BudgetTrackerMVC/ApplicationCore/bin/Debug/net5.0/ApplicationCore.dll
+/Users/feli-v/Documents/HaoFu.BudgetTrackerMVC/ApplicationCore/bin/Debug/net5.0/ref/ApplicationCore.dll
+/Users/feli-v/Documents/HaoFu.BudgetTrackerMVC/ApplicationCore/bin/Debug/net5.0/ApplicationCore.pdb
+/Users/feli-v/Documents/HaoFu.BudgetTrackerMVC/ApplicationCore/obj/Debug/net5.0/ApplicationCore.GeneratedMSBuildEditorConfig.editorconfig
+/Users/feli-v/Documents/HaoFu.BudgetTrackerMVC/ApplicationCore/obj/Debug/net5.0/ApplicationCore.AssemblyInfoInputs.cache
+/Users/feli-v/Documents/HaoFu.BudgetTrackerMVC/ApplicationCore/obj/Debug/net5.0/ApplicationCore.AssemblyInfo.cs
+/Users/feli-v/Documents/HaoFu.BudgetTrackerMVC/ApplicationCore/obj/Debug/net5.0/ApplicationCore.csproj.CoreCompileInputs.cache
+/Users/feli-v/Documents/HaoFu.BudgetTrackerMVC/ApplicationCore/obj/Debug/net5.0/ApplicationCore.dll
+/Users/feli-v/Documents/HaoFu.BudgetTrackerMVC/ApplicationCore/obj/Debug/net5.0/ref/ApplicationCore.dll
+/Users/feli-v/Documents/HaoFu.BudgetTrackerMVC/ApplicationCore/obj/Debug/net5.0/ApplicationCore.pdb
+/Users/feli-v/Documents/HaoFu.BudgetTrackerMVC/ApplicationCore/obj/Debug/net5.0/ApplicationCore.genruntimeconfig.cache
+/Users/feli-v/Documents/HaoFu.BudgetTrackerMVC/ApplicationCore/obj/Debug/net5.0/ApplicationCore.csproj.AssemblyReference.cache
