@@ -55,11 +55,6 @@ namespace Infrastructure.Services
             return deleteModel;
         }
 
-        public async Task<UserBudgetResponseModel> GetAllIncomeRecords()
-        {
-            throw new NotImplementedException();
-        }
-
         public async Task<UserBudgetResponseModel> GetIncomeById(int id)
         {
             var income = await _incomeRepository.GetByIdAsync(id);

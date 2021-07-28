@@ -22,10 +22,9 @@
       <File FileName="Infrastructure/Repositories/ExpenditureRepository.cs" />
       <File FileName="Infrastructure/Repositories/IncomeRepository.cs" />
       <File FileName="Infrastructure/Repositories/UserRepository.cs" />
-      <File FileName="Infrastructure/Services/CurrentUser.cs" />
-      <File FileName="Infrastructure/Services/ExpenditureService.cs" />
-      <File FileName="Infrastructure/Services/IncomeService.cs" />
-      <File FileName="Infrastructure/Services/UserService.cs" Line="46" Column="23" />
+      <File FileName="Infrastructure/Services/CurrentUser.cs" Line="5" Column="7" />
+      <File FileName="Infrastructure/Services/ExpenditureService.cs" Line="40" Column="15" />
+      <File FileName="Infrastructure/Services/IncomeService.cs" Line="79" Column="23" />
       <File FileName="HaoFu.BudgetTrackerMVC/appsettings.json" />
       <File FileName="HaoFu.BudgetTrackerMVC/Startup.cs" />
       <File FileName="HaoFu.BudgetTrackerMVC/Controllers/AccountController.cs" />
@@ -35,7 +34,6 @@
       <File FileName="HaoFu.BudgetTrackerMVC/Views/Account/Login.cshtml" />
       <File FileName="HaoFu.BudgetTrackerMVC/Views/Account/Register.cshtml" />
       <File FileName="HaoFu.BudgetTrackerMVC/Views/Expenditure/Delete.cshtml" />
-      <File FileName="HaoFu.BudgetTrackerMVC/Views/Expenditure/EditExpenditure.cshtml" />
       <File FileName="HaoFu.BudgetTrackerMVC/Views/Expenditure/Update.cshtml" />
       <File FileName="HaoFu.BudgetTrackerMVC/Views/Home/Index.cshtml" />
       <File FileName="HaoFu.BudgetTrackerMVC/Views/Income/Delete.cshtml" />
@@ -48,10 +46,11 @@
       <File FileName="HaoFu.BudgetTrackerMVC/Views/User/AddExpenditure.cshtml" />
       <File FileName="HaoFu.BudgetTrackerMVC/Views/User/AddIncome.cshtml" />
       <File FileName="HaoFu.BudgetTrackerMVC/Views/User/Delete.cshtml" />
-      <File FileName="HaoFu.BudgetTrackerMVC/Views/User/UpdateUser.cshtml" />
+      <File FileName="HaoFu.BudgetTrackerMVC/Views/User/UpdateUser.cshtml" Line="31" Column="7" />
       <File FileName="HaoFu.BudgetTrackerMVC/Views/User/UserProfile.cshtml" />
       <File FileName="HaoFu.BudgetTrackerMVC/Controllers/ExpenditureController.cs" />
       <File FileName="ApplicationCore/Entities/User.cs" />
+      <File FileName="Infrastructure/Services/UserService.cs" Line="178" Column="62" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

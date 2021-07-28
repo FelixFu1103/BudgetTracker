@@ -87,7 +87,7 @@ namespace Infrastructure.Services
         public async Task<UserDetailResponseModel> GetUserDetails(int id)
         {
             var user = await _userRepository.GetByIdAsync(id);
-            var totalcash = (user.TotalIncomes) + (user.TotalExpends);
+            var totalcash = (user.TotalIncomes) - (user.TotalExpends);
             var userdetail = new UserDetailResponseModel
             {
                 Id = user.Id,
@@ -175,7 +175,7 @@ namespace Infrastructure.Services
                 HashedPassword = hashedPassword,
                 JoinedOn = DateTime.Now,
             };
-            //save to db by calling UserRepository add method
+      
             var createUser = await _userRepository.AddAsync(user);
             var userResponse = new UserRegisterResponseModel
             {

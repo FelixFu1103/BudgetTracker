@@ -21,6 +21,7 @@ namespace Infrastructure.Data
             modelBuilder.Entity<Expenditure>(ConfigureExpenditure);
 
         }
+        // have exceeption about forigen key
         private void ConfigureUser(EntityTypeBuilder<User> builder)
         {
             builder.ToTable("User");
